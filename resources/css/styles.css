@@ -1,33 +1,165 @@
 html {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    line-height: 1.8em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #202020;
 }
 /* general styles */
 h1 {
+    font-family: 'Martel', serif;
     font-size: 3em;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 h2 {
-    font-size: 1.5em;
-    font-weight: 700;
-    letter-spacing: 0.01em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.75em;
+    font-weight: 500;
 }
 
 h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25em;
     font-weight: 700;
-    letter-spacing: 0.02em;
 }
 
 p {
-    font-weight: 300;
+    line-height: 1.5;
 }
 
-header {
-    display: flex;
-}
-
+/* navigation */
 nav {
     display: flex;
+    height: 4em;
+    align-items: center;
+    padding: 0 1.5em;
+    background-color: rgba(210, 217, 228, 0.589);
 }
+
+.logo {
+    display: inline-flex;
+    flex-grow: 1;
+}
+
+.logo img {
+    height: 2em;
+}
+
+nav ul {
+    display: inline-flex;
+}
+
+nav li {
+    padding-left: 1em;
+    color: #202020;
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: rgb(95, 95, 95);
+}
+
+#logo-text span {
+    color: black;
+    font-weight: 700;
+}
+
+/* header */
+header {
+    display: flex;
+    background-color: #f0f5fc81;
+    align-items: center;
+}
+
+header img {
+    width: 60%;
+    margin: 2em 1.5em;
+}
+
+#start-here {
+    width: 90%;
+    padding-right: 3em;
+}
+
+#start-here h1 {
+    margin-bottom: 0.5em;
+    color: rgb(224, 90, 0);
+}
+
+#start-here h2 {
+    max-width: 80%;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+    margin-bottom: 2em;
+}
+
+#button {
+    max-width: 70%;
+    padding: 0.65em 0;
+    color: white;
+    background-color: rgb(224, 90, 0);
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+/* key info */
+#content {
+    display: flex;
+}
+
+#main {
+    width: 60%;
+    margin: 2em 1.5em;
+}
+
+#main img {
+    width: 100%;
+    padding-bottom: 2em;
+}
+
+#blurb {
+    padding-bottom: 2em;
+}
+
+#blurb h2 {
+    padding-bottom: 0.5em;
+}
+
+#info-desktop {
+    width: 40%;
+    margin: 1.5em;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+}
+
+.card:nth-child(1n) {
+    background-color: rgb(255, 246, 228);
+}
+
+.card:nth-child(2n) {
+    background-color: rgb(226, 226, 226);
+}
+
+.card:nth-child(3n) {
+    background-color: rgb(255, 246, 228);
+}
+
+.imgcontainer {
+    width: 35%;
+    padding: 0.5em;
+}
+
+.imgcontainer img {
+    width: 100%;
+    height: auto;
+}
+
+.info-text {
+    width: 65%;
+    margin-left: 1em;
+} 
