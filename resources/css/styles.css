@@ -12,8 +12,9 @@ h1 {
 
 h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.75rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(221, 97, 15);
 }
 
 .heading h2 {
@@ -21,13 +22,15 @@ h2 {
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    padding-top: 3rem;
+    padding: 2rem;
 }
 
 h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #4d4d4d;
 }
 
 p {
@@ -40,7 +43,7 @@ nav {
     height: 4rem;
     align-items: center;
     padding: 0 1.5rem;
-    background-color: rgba(210, 217, 228, 0.589);
+    background-color: rgb(227, 236, 243);
 }
 
 .logo {
@@ -57,7 +60,7 @@ nav ul {
 }
 
 nav li {
-    padding-left: 1rem;
+    padding-left: 2rem;
     color: #202020;
     font-family: 'Roboto', sans-serif;
 }
@@ -93,7 +96,7 @@ header img {
 
 #start-here h1 {
     margin-bottom: 2rem;
-    color: rgb(224, 90, 0);
+    color: rgb(221, 97, 15);
 }
 
 #start-here h2 {
@@ -101,10 +104,12 @@ header img {
     letter-spacing: 0.01rem;
     line-height: 1.2;
     margin-bottom: 2.5rem;
+    font-weight: 500;
+    color: #4d4d4d;
 }
 
 #button {
-    max-width: 70%;
+    max-width: 20rem;
     padding: 0.65rem 0;
     color: white;
     background-color: rgb(224, 90, 0);
@@ -127,12 +132,20 @@ header img {
     padding-bottom: 2rem;
 }
 
-#blurb {
-    padding-bottom: 2rem;
+.blurb {
+    padding-bottom: 1rem;
 }
 
-#blurb h2 {
+.blurb h2, .blurb h3 {
     padding-bottom: 0.5rem;
+}
+
+.blurb p {
+    width: 90%;
+}
+
+.blurb span {
+    font-size: 0.9rem;
 }
 
 #info-desktop {
@@ -145,21 +158,18 @@ header img {
     align-items: center;
 }
 
-.card:nth-child(1n) {
-    background-color: rgb(255, 246, 228);
+.card:nth-child(-n+2) {
+    background-color: rgba(255, 252, 247, 0.836);
+    border-bottom: 1px solid rgb(235, 227, 221);
 }
 
-.card:nth-child(2n) {
-    background-color: rgb(226, 226, 226);
-}
-
-.card:nth-child(3n) {
-    background-color: rgb(255, 246, 228);
+.card:nth-child(3) {
+    background-color: rgba(255, 252, 247, 0.836);
 }
 
 .imgcontainer {
     width: 35%;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .imgcontainer img {
@@ -169,25 +179,32 @@ header img {
 
 .info-text {
     width: 65%;
-    margin-left: 1rem;
-} 
+    padding-right: 1.5rem;
+}
+
+.readmore {
+    color: rgb(192, 0, 0);
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
 
 /* courses */
 #courses {
     background-color: aliceblue;
+    padding: 1rem;
 }
 
 #course-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 2rem 0;
+    padding-bottom: 2rem;
 }
 
 .course {
     width: 25%;
-    background-color: white;
     margin: 1rem;  
+    background-color: white;
 }
 
 .course img {
@@ -199,11 +216,79 @@ header img {
     padding: 1rem;
 }
 
+.text h3 {
+    padding: 0.5rem 0;
+    color: rgb(0, 18, 66);
+}
+
+.text p {
+    padding: 0.25rem 0;
+    width: 85%;
+}
+
 /* thesis exhibit */
 #thesis-exhibit {
-    background-color: #f0f5fc81;
+    background-color: rgba(231, 236, 243, 0.644);
+    padding: 1.5rem;
 }
 
 #exhibit-container {
     display: flex;
+    margin: 0.5rem 0;
+}
+
+#featured-thesis {
+    width: 60%;
+}
+
+#featured-thesis video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+#thesis-card-container {
+    width: 40%;
+}
+
+.thesis-card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color:rgba(219, 225, 233, 0.849);
+}
+
+.thesis-card img {
+    width: 35%;
+    height: auto;
+}
+
+.thesis-card .text {
+    width: 65%;
+}
+
+/* footer */
+footer {
+    display: flex;
+    padding: 1rem;
+    height: 3rem;
+    background-color: rgb(0, 18, 66);
+    color: white;
+}
+
+#copyright {
+    display: inline-flex;
+    flex-grow: 1;
+    padding-left: 0.5rem;
+    font-size: 0.8rem;
+}
+
+footer ul {
+    display: inline-flex;
+}
+
+footer li {
+    padding-right: 1rem;
+    font-size: 0.8rem;
 }
