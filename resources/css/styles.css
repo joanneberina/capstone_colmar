@@ -59,8 +59,14 @@ nav {
     flex-grow: 1;
 }
 
-.logo img {
+#logo-text {
+    display: inline-flex;
+    align-items: center;
     height: 2rem;
+}
+
+.logo img {
+    height: 2.25rem;
 }
 
 #mobile {
@@ -179,7 +185,7 @@ header img {
     letter-spacing: 0.02rem;
 }
 
-@media only screen and (max-width: 800px) and (min-width: 520px) {
+@media only screen and (max-width: 800px) {
     header {
         display: block;
     }
@@ -191,13 +197,13 @@ header img {
     
     #start-here, #start-here h1, #start-here h2 {
         width: 100%;
-        max-width: 100%;
+        max-width: 90%;
         margin: 0 auto;
-        padding: 1rem 1rem;
+        padding: 1rem;
     }
 
     #button {
-        margin: 2rem auto;
+        margin: 1rem auto;
     }
 }
 
@@ -244,8 +250,8 @@ header img {
     color: #4d4d4d;
 }
 
-.blurb p {
-    width: 90%;
+.blurb h3 {
+    font-size: 1.25rem;
 }
 
 .blurb span {
@@ -273,42 +279,6 @@ header img {
     display: none;
 }
 
-@media only screen and (max-width: 800px) {
-    .desktop-img {
-        display: none;
-    }
-
-    .mobile-img {
-        display: block;
-        height: 100%;
-    }
-
-    #info {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .info-text {
-        width: 100%;
-        padding-bottom: 1rem;
-    }
-}
-
-@media only screen and (max-width: 800px) and (min-width: 520px) {
-    #info {
-        margin-bottom: 2rem;
-    }
-
-    .card {
-        padding: 0.5rem;
-        margin: 0 2rem;      
-    }
-
-    .info-text {
-        padding: 0;
-    }
-}
-
 .card:nth-child(-n+2) {
     background-color: rgba(255, 252, 247, 0.836);
     border-bottom: 1px solid rgb(235, 227, 221);
@@ -323,9 +293,11 @@ header img {
     transition: linear 0.4s;
 }
 
-.imgcontainer {
-    width: 35%;
-    padding: 1rem;
+@media only screen and (min-width: 801px) {
+    .imgcontainer {
+        width: 35%;
+        padding: 1rem;
+    }
 }
 
 .imgcontainer img {
@@ -342,6 +314,47 @@ header img {
 
 .readmore:hover { 
     color: rgb(255, 81, 0);
+}
+
+@media only screen and (max-width: 800px) {
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+        width: 100%;
+    }
+
+    .card {
+        padding: 0.5rem;
+        margin: 0 2rem;      
+    }
+
+    #info {
+        width: 100%;
+        margin: 0 auto 2rem auto;
+    }
+
+    .info-text {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .imgcontainer {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .card {
+        display: block;
+    }
+
+    .mobile-img {
+        width: 100%;
+    }
 }
 
 /* courses */
@@ -364,7 +377,7 @@ header img {
 }
 
 .course:hover {
-    box-shadow: 0px 10px rgb(221, 97, 15);
+    box-shadow: 0px 7px rgb(221, 97, 15);
     transition: linear 0.4s;
 }
 
@@ -384,16 +397,52 @@ header img {
 
 .text p {
     padding: 0.25rem 0;
-    width: 85%;
 }
 
-@media only screen and (max-width: 800px) and (min-width: 520px) {
-    .course {
-        width: 40%;
+@media only screen and (max-width: 900px) and (min-width: 672px) {
+    .courses {
+        padding: .25rem;
     }
 
-    .text p {
+    .course {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 671px) and (min-width: 421px) {
+    .course {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #course-container {
+        display: block;
         width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .course {
+        width: 100%;
+        margin: 1rem auto;
+        padding: 0.5rem 0;
+    }
+
+    .heading h2 {
+        padding: 1rem;
+    }
+
+    .course img {
+        display: none;
+    }
+
+    .text h4, .text p {
+        display: none;
+    }
+
+    .text h3 {
+        margin: 0 auto;
+        padding: 0;
     }
 }
 
@@ -405,7 +454,6 @@ header img {
 
 #exhibit-container {
     display: flex;
-    margin: 0.5rem 0;
 }
 
 #featured-thesis {
@@ -444,18 +492,34 @@ header img {
     width: 65%;
 }
 
-@media only screen and (max-width: 800px) and (min-width: 520px) {
+@media only screen and (max-width: 800px) {
     #exhibit-container {
         display: block;
     }
 
     #featured-thesis {
         width: 100%;
+        padding-bottom: 1rem;
     }
 
     #thesis-card-container {
         width: 80%;
         margin: 0 auto;
+    }
+
+    #featured-thesis .blurb {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    #thesis-exhibit {
+        padding: 0;
+    }
+
+    #thesis-card-container {
+        display: none;
+        width: 100%;
     }
 }
 
@@ -482,4 +546,20 @@ footer ul {
 footer li {
     padding-right: 1rem;
     font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 800px) {
+    footer {
+        display: block;
+        height: auto;
+    }
+
+    #copyright {
+        display: block;
+        margin: 0 auto;
+    }
+
+    footer ul {
+        display: none;
+    }
 }
