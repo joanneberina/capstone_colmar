@@ -63,11 +63,15 @@ nav {
     height: 2rem;
 }
 
-nav ul {
+#mobile {
+    display: none;
+}
+
+#desktop {
     display: inline-flex;
 }
 
-nav li {
+#desktop li {
     padding: 1rem;
 }
 
@@ -137,6 +141,16 @@ header img {
     color: #4d4d4d;
 }
 
+@media only screen and (max-width: 950px) and (min-width: 840px) {
+    #start-here {
+        width: 100%;
+    }
+
+    #start-here h2 {
+        max-width: 100%
+    }
+}
+
 #button {
     max-width: 20rem;
     padding: 0.65rem 0;
@@ -171,6 +185,7 @@ header img {
 
 .blurb h2, .blurb h3 {
     padding-bottom: 0.5rem;
+    color: #4d4d4d;
 }
 
 .blurb p {
@@ -181,14 +196,32 @@ header img {
     font-size: 0.9rem;
 }
 
+/* event cards */
 #info-desktop {
     width: 40%;
     margin: 1.5rem;
 }
 
+.info-text {
+    width: 65%;
+    padding-right: 1.5rem;
+}
+
 .card {
     display: flex;
     align-items: center;
+}
+
+@media only screen and (max-width: 950px) and (min-width: 320px) {
+    .info-text {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .card {
+        display: block;
+        padding: 1rem;        
+    }
 }
 
 .card:nth-child(-n+2) {
@@ -215,17 +248,11 @@ header img {
     height: auto;
 }
 
-.info-text {
-    width: 65%;
-    padding-right: 1.5rem;
-}
-
 .readmore {
     color: rgb(221, 97, 15);
     margin-top: 0.5rem;
     font-size: 0.9rem;
     font-weight: 600;
-    text-transform: uppercase;
 }
 
 .readmore:hover { 
