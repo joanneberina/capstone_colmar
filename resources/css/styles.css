@@ -361,6 +361,10 @@ header img {
 }
 
 /* courses */
+.text.mobile {
+    display: none;
+}
+
 #courses {
     background-color: aliceblue;
     padding: 1rem;
@@ -428,7 +432,6 @@ header img {
     .course {
         width: 100%;
         margin: 1rem auto;
-        padding: 0.5rem 0;
     }
 
     .heading h2 {
@@ -439,13 +442,21 @@ header img {
         display: none;
     }
 
-    .text h4, .text p {
+    .text {
         display: none;
     }
 
-    .text h3 {
+    .text.mobile {
+        display: inline-flex;
+        align-content: center;
+        align-items: center;
+        padding: 0.5rem 1rem;
+    }
+
+    .text.mobile h3 {
         margin: 0 auto;
-        padding: 0;
+        padding-left: 1rem;
+        font-size: 1rem;
     }
 }
 
