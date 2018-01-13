@@ -121,6 +121,7 @@ ul a {
     position: relative;
     text-decoration: none;
     text-align: center;
+    transition: ease-in 0.4s;
 }   
 
 ul a::after {
@@ -278,6 +279,7 @@ header img {
     display: flex;
     align-items: center;
     height: calc(100% / 3);
+    transition: linear 0.4s;
 }
 
 .mobile-img {
@@ -382,6 +384,7 @@ header img {
     width: 25%;
     margin: 1rem;  
     background-color: white;
+    transition: linear 0.4s;
 }
 
 .course:hover {
@@ -490,6 +493,7 @@ header img {
     padding: 1rem;
     margin: 0.5rem;
     border-bottom: 1px solid rgb(235, 227, 221);
+    transition: ease-out 0.4s;
 }
 
 .thesis-card:hover {
