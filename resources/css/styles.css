@@ -461,7 +461,6 @@ header img {
 
 /* thesis exhibit */
 #thesis-exhibit {
-    background-color: rgba(231, 236, 243, 0.644);
     padding: 1.5rem;
 }
 
@@ -488,7 +487,7 @@ header img {
     align-items: center;
     padding: 1rem;
     margin: 0.5rem;
-    background-color:rgba(219, 225, 233, 0.849);
+    border-bottom: 1px solid rgb(235, 227, 221);
 }
 
 .thesis-card:hover {
